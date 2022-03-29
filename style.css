@@ -82,7 +82,7 @@
 /* Home section styling */
 .home{
     display: flex;
-    background: url("./photos/nubelson-fernandes-Y376h7VN27c-unsplash.jpg") no-repeat center;
+    background: url("./photos/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -121,9 +121,8 @@
     font-size: 20px;
     padding: 10px 20px;
     border-radius: 5px;
-    margin-top: 20px;
     transition: all .3s ease;
-    margin: 0 10px;
+    margin: 30px 10px;
 }
 .home .home-content a:hover{
     background: #0d6efd;
@@ -133,7 +132,10 @@
 
 /* about section styling */
 section{
-    padding:100px 0
+    padding:80px 0;
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+
 }
 .about{
     font-family: 'Poppins',sans-serif;
@@ -143,16 +145,18 @@ section{
     text-align: center;
     font-size: 40px;
     font-weight: 400;
+    margin-bottom: 30px;
 
 }
 .about .about-content .image img{
     height: 400px;
     width: 400px;
     object-fit: contain;
-    box-shadow: 0 0 5px #0d6efd;
+    box-shadow: 10px 10px 30px #152c4e,-10px -10px 30px #1c3b6d;
 
 }
-.about .about-content {
+
+.about .about-content,.services-content {
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -194,11 +198,55 @@ flex-wrap: wrap;
     background: none;
 }
 
+/* services section styling */
+.services{
+    font-family: 'Poppins',sans-serif;
+}
+.services .title{
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.services .services-content .card{
+    width: calc(45% - 20px);
+    text-align: center;
+    box-shadow: 5px 5px 20px #081c3a,-5px -5px 20px #0f2241;
+    border-radius: 5px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.services .services-content .card:hover{
+    background: #0d6efd;
+    
+}
+.services .services-content .card .box{
+    transition: all 0.4s ease;
+
+}
+.services .services-content .card .box:hover{
+    transform: scale(1.05);
 
 
+}
 
 
-
+.services .services-content .card i{
+    font-size: 50px;
+    color: #0d6efd;
+    transition: color .4s ease;
+}
+.services .services-content .card:hover i{
+    color: #fff;
+    
+}
+.services .services-content .card .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
 
 
 /* media queries */
@@ -293,7 +341,6 @@ flex-wrap: wrap;
         height: 300px;
         width: 300px;
         object-fit: contain;
-        box-shadow: 0 0 5px #0d6efd;
     
     }
 
@@ -328,10 +375,6 @@ flex-wrap: wrap;
 
     }
 }
-
-
-
-
 
     @media (max-width:445px)
     {
