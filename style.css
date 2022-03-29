@@ -129,6 +129,33 @@
     background: #0d6efd;
 }
 
+
+
+/* about section styling */
+.about{
+    font-family: 'Poppins',sans-serif;
+}
+.about .title{
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+
+}
+.about .about-content .image img{
+    height: 400px;
+    width: 400px;
+    object-fit: contain;
+
+}
+
+
+
+
+
+
+
+
+
+
 /* media queries */
 @media (max-width:990px){
     .max-width{
