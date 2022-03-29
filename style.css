@@ -132,22 +132,67 @@
 
 
 /* about section styling */
+section{
+    padding:100px 0
+}
 .about{
     font-family: 'Poppins',sans-serif;
 }
 .about .title{
     font-family: 'Ubuntu',sans-serif;
     text-align: center;
+    font-size: 40px;
+    font-weight: 400;
 
 }
 .about .about-content .image img{
     height: 400px;
     width: 400px;
     object-fit: contain;
+    box-shadow: 0 0 5px #0d6efd;
 
 }
+.about .about-content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;    
 
+}
+.about .about-content .image {
+    width: 45%;
 
+}
+.about .about-content .right {
+    width: 55%;
+
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+}
+.about .about-content .right .text span{
+    color: #0d6efd;
+}
+
+.about .about-content .right a{
+    display: inline-block;
+    background: #0d6efd;
+    color:#fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: all .3s ease;
+}
+
+.about .about-content .right a:hover{
+    border: 2px solid #0d6efd;
+    color: #0d6efd;
+    background: none;
+}
 
 
 
@@ -204,6 +249,7 @@
         font-size: 35px;    
     }
 
+  
 }
 @media (max-width:768px){
     .home .max-width{
@@ -241,3 +287,59 @@
     }
   
 }
+
+@media (max-width:1050px){
+    .about .about-content .image img{
+        height: 300px;
+        width: 300px;
+        object-fit: contain;
+        box-shadow: 0 0 5px #0d6efd;
+    
+    }
+
+
+}
+@media (max-width:800px){
+    .about .about-content .image{
+        width: 100%;
+    }
+    .title{
+        margin-bottom: 50px;
+    }
+    .about-content .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  .about  .about-content .image img{
+        width: 400px;
+        height: 400px;
+        margin-bottom: 20px;
+     
+    }
+  .about  .about-content .right{
+        margin: 0 auto ;
+        width: 100%;
+    }
+
+    .about .about-content .right a{
+        font-size: 15px;
+        padding: 10px 15px;
+
+    }
+}
+
+
+
+
+
+    @media (max-width:445px)
+    {
+        .about  .about-content .image img{
+            width: 300px;
+            height: 300px;
+            /* margin-bottom: 20px; */
+         
+        }
+
+    }
