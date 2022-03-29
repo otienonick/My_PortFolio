@@ -132,7 +132,7 @@
 
 /* about section styling */
 section{
-    padding:80px 0;
+    padding:50px 0;
     background: rgba(0, 0, 0, 1);
     color: #fff;
 
@@ -145,7 +145,6 @@ section{
     text-align: center;
     font-size: 40px;
     font-weight: 400;
-    margin-bottom: 30px;
 
 }
 .about .about-content .image img{
@@ -156,7 +155,7 @@ section{
 
 }
 
-.about .about-content,.services-content {
+.about .about-content,.services-content ,.skills-content{
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -174,7 +173,6 @@ flex-wrap: wrap;
 .about .about-content .right .text{
     font-size: 25px;
     font-weight: 700;
-    margin-bottom: 15px;
 
 }
 .about .about-content .right .text span{
@@ -199,10 +197,10 @@ flex-wrap: wrap;
 }
 
 /* services section styling */
-.services{
+.services,.skills{
     font-family: 'Poppins',sans-serif;
 }
-.services .title{
+.services .title,.skills .title{
     font-family: 'Ubuntu',sans-serif;
     text-align: center;
     font-size: 40px;
@@ -247,6 +245,84 @@ flex-wrap: wrap;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+/* skills section styling */
+
+.skills .skills-content .collumn{
+    width: calc(50% - 20px);
+}
+
+.skills .skills-content .right .bars,.left .bars{
+    margin-bottom: 25px;
+
+}
+
+.skills .skills-content .right .info,.left .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .web{
+    text-decoration: underline;
+    text-align: center;
+    color: #0d6efd;
+}
+
+.skills .skills-content .right ,.left span{
+    font-weight: 500;
+    font-size: 18px;
+
+} 
+
+.skills .skills-content .right .line ,.left  .line{
+    height: 5px;
+    width: 100%;
+    background:lightgray;
+    position: relative;
+    
+}
+
+.skills .skills-content .right .line::before,.left  .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: #0d6efd;
+     
+}
+
+.skills .skills-content .right .html::before{
+    width: 90%;
+}
+.skills .skills-content .right .css::before{
+    width: 70%;
+}
+.skills .skills-content .right .javascript::before{
+    width: 80%;
+}
+.skills .skills-content .right .html::before{
+    width: 90%;
+}
+.skills .skills-content .right .angular::before{
+    width: 70%;
+}
+.skills .skills-content .right .flask::before{
+    width: 60%;
+}
+.skills .skills-content .right .django:before{
+    width: 80%;
+}
+.skills .skills-content .left .figma::before{
+    width: 90%;
+}
+.skills .skills-content .left .miro::before{
+    width: 70%;
+}
+
+
 
 
 /* media queries */
@@ -311,7 +387,10 @@ flex-wrap: wrap;
     .home .home-content .text-3{
         font-size: 25px;    
     }
-  
+    .services .services-content .card{
+        width: calc(100%);
+        margin-bottom: 30px;
+    }
 }
 @media (max-width:500px){
     .home .max-width{
