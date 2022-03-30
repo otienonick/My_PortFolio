@@ -17,7 +17,6 @@
     font-family: 'ubuntu',sans-serif;
     padding: 25px 0;
     transition: all 0.3s ease-in-out;
-
 }
 .navbar.sticky{
     background:rgba(0,0,0,0.7);
@@ -92,7 +91,7 @@
 
 }
 .home .max-width{
-    margin: auto 0 auto 100px;
+    margin: auto 0 auto 100px ;
 }
 .home .home-content .text-1{
     font-size: 30px;
@@ -388,6 +387,24 @@ flex-wrap: wrap;
     background: #0d6efd !important;
 }
 
+.projects .carousel .card .box a{
+    display: inline-block;
+    background: #1c3a5b;;
+    color:#fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    opacity: 0;
+    transition: all .5s ease;
+
+}
+.projects .carousel .card .box:hover a{
+    opacity: 1;
+    border: 1px solid #fff;
+}
+.projects .carousel .card .box a:hover{
+    background: #07203a;;
+}
 
 
 /* media queries */
