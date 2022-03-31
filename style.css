@@ -22,7 +22,8 @@ html{
     transition: all 0.3s ease-in-out;
 }
 .navbar.sticky{
-    background:rgba(0,0,0,0.7);
+    background-color: rgb(0,0,0); /* Fallback color */
+    background:rgba(0,0,0,0.5);
     backdrop-filter: blur(4px);
     padding: 10px 0;
 
@@ -159,6 +160,12 @@ html{
     background: #0d6efd;
 }
 
+
+.home .home-content .social a{
+    border: none;
+    padding: 5px 5px;
+}
+
 /* about section styling */
 section{
     padding:50px 0;
@@ -280,12 +287,12 @@ flex-wrap: wrap;
     width: calc(50% - 20px);
 }
 
-.skills .skills-content .right .bars,.left .bars{
+.skills .skills-content .right .bars,.skills .skills-content .left .bars{
     margin-bottom: 25px;
 
 }
 
-.skills .skills-content .right .info,.left .info{
+.skills .skills-content .right .info, .skills .skills-content .left .info{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -297,13 +304,13 @@ flex-wrap: wrap;
     color: #0d6efd;
 }
 
-.skills .skills-content .right ,.left span{
+.skills .skills-content .right span ,.skills .skills-content .left span{
     font-weight: 500;
     font-size: 18px;
 
 } 
 
-.skills .skills-content .right .line ,.left  .line{
+.skills .skills-content .right .line ,.skills .skills-content .left  .line{
     height: 5px;
     width: 100%;
     background:lightgray;
@@ -311,7 +318,7 @@ flex-wrap: wrap;
     
 }
 
-.skills .skills-content .right .line::before,.left  .line::before{
+.skills .skills-content .right .line::before,.skills .skills-content .left .line::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -604,6 +611,7 @@ footer span{
     .home .home-content .text-3{
         font-size: 35px;    
     }
+
 
   
 }
