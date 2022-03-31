@@ -65,6 +65,7 @@ html{
     
 }
 .navbar .menu li a{
+    display: block;
     color:#fff;
     margin-left: 30px;
     transition: color 0.3s ease;
@@ -226,7 +227,7 @@ flex-wrap: wrap;
 
 /* services section styling */
 
-.services,.skills,.projects,.contacts{
+.services,.skills,.projects,.contacts,footer{
     font-family: 'Poppins',sans-serif;
 }
 .services .title,.skills .title,.projects .title{
@@ -539,9 +540,18 @@ flex-wrap: wrap;
 
  }
 
+/* footer styling */
 
 
-
+footer{
+    background: #0d6efd;
+    padding: 20px 20px;
+    text-align: center;
+}
+footer span{
+    font-size: 20px;
+    font-weight: 500;
+}
 
 
 
