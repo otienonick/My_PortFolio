@@ -20,9 +20,10 @@ html{
     font-family: 'ubuntu',sans-serif;
     padding: 25px 0;
     transition: all 0.3s ease-in-out;
+
 }
 .navbar.sticky{
-    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgb(0,0,0);
     background:rgba(0,0,0,0.5);
     backdrop-filter: blur(4px);
     padding: 10px 0;
@@ -114,7 +115,7 @@ html{
 /* Home section styling */
 .home{
     display: flex;
-    background: url("./photos/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg") no-repeat center;
+    background: url("./photos/home-background.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
